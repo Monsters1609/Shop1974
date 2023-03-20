@@ -37,17 +37,12 @@ code {
   --colorDeco7:white;
   --colorDeco8:gray;
   --colorDeco9:grey;
-  --colorDeco10:#ccccff;
-  --colorDeco11:#ffcccc;
+  --colorDeco10:#ffcccc;
+  --colorDeco11:#ccffff;
   --colorDeco12:black;
   --colorDeco13:pink;
   --colorDeco14:#38a8e8;
   --colorDeco15:orange;
   --colorDeco16:chocolate;
 }
-@media only screen and (min-width: 1031px){
 
-}
-/* @media only screen and (max-width: 1031px) {
-  
-} */
