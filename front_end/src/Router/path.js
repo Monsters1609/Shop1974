@@ -1,17 +1,13 @@
-import Account from "../Pages/account"
-import Cart from "../Pages/cart"
-import Home from "../Pages/home"
-import Notification from "../Pages/notification"
-import Setting from "../Pages/setting"
-import Shop from "../Pages/shop"
+import {account, cart, home, introduce, notification, setting, shop} from "../Pages"
 
 const publicRouter = [
-    {path:'/',component:Home,title:'Home'},
-    {path:'/Shop',component:Shop,title:'Shop'},
-    {path:'/Notification',component:Notification,title:'Notification'},
-    {path:'/Cart',component:Cart,title:'Cart'},
-    {path:'/Setting',component:Setting,title:'Setting'},
-    {path:'/Account',component:Account,title:'Account'},
+    {path:'/',component:home,title:'Home'},
+    {path:'/Shop',component:shop,title:'Shop'},
+    {path:'/Notification',component:notification,title:'Notification'},
+    {path:'/Cart',component:cart,title:'Cart'},
+    {path:'/Setting',component:setting,title:'Setting'},
+    {path:'/Account',component:account,title:'Account'},
+    {path:'/Introduce',component:introduce,title:'Introduce'},
 ]
 const privateRouter = [
     

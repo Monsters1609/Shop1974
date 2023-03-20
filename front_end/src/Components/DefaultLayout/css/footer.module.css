@@ -1,3 +1,99 @@
-.Footer{
-    
+@media only screen and (min-Width:1177px) {
+    .Footer{
+        width: 100%;
+        height: 40%;
+        background-color: var(--colorDeco1);
+        position: absolute;
+        bottom: 0;
+        z-index: 0;
+    }
+    .FooterMobile{
+        display: none;
+    }
+    .FooterWeb{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .FooterWeb .FooterWebTop{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        align-items: baseline;
+    }
+    .FooterWeb .MapInstruction, .FooterWeb .Contact, .FooterWeb .SocialNetwork{
+        width: 33.3%;
+    }
+    .FooterWeb .TitleFooter{
+        height: 30%;
+        text-align: center;
+        color: var(--text3);
+    }
+    .FooterWeb .IframeFooter, .FooterWeb .InforManager, .FooterWeb .SocialNetwork{
+        height: 70%;
+    }
+    .FooterWeb .MapInstruction Iframe{
+        width: 238px;
+        height: 129px;
+        border: 0;
+        position: relative;
+        left: 105px;
+    }
+    .FooterWeb .Contact{
+        text-align: center;
+        color: var(--text1);
+    }
+    .FooterWeb .Contact a{
+        color: var(--text1);
+    }
+    .FooterWeb .SocialNetwork .LinkSN{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .FooterWeb .LinkSN .LinkItemSN{
+        font-size: 35px;
+        color: var(--text1);
+    }
+    .FooterWeb .FooterWebBot{
+        width: 100%;
+        height: 20%;
+        text-align: center;
+    }
+}
+@media only screen and (max-Width:1177px) {
+    .Footer{
+        width: 100%;
+        height: 10%;
+        background-color: var(--colorDeco1);
+        position: fixed;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        bottom: 0;
+        z-index: 99;
+    }
+    .FooterWeb{
+        display: none;
+    }
+    .FooterMobile{
+        width: 100%;
+        height: 100%;
+    }
+    .FooterMobile .MenuListFooterMobi{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .FooterMobile .MenuItemMobi{
+        width: 25%;
+        list-style: none;
+        text-align: center;
+    }
+    .FooterMobile .LinkItemMobi{
+        text-decoration: none;
+        font-size: 22px;
+        color: var(--text3);
+    }
 }

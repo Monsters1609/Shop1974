@@ -55,7 +55,7 @@
     .HeaderWeb .MenuItemLeft .link, .HeaderWeb .MenuItemRight .link{
         text-decoration: none;
         font-size: 22px;
-        color: var(--colorDeco6);
+        color: var(--text3);
     }
     .Header .HeaderWeb .HeaderRight .MenuListRight .MenuItemRight .BtnAccount{
         width: 100%;
@@ -96,6 +96,8 @@
         width: 100%;
         height: 10%;
         position: fixed;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
         background-color: var(--colorDeco1);
         z-index: 99;
         display: flex;
@@ -131,10 +133,11 @@
     .HeaderMobile .MenuListHeaderMobi .MenuItemMobi{
         width: 25%;
         list-style: none;
+        text-align: center;
     }
     .HeaderMobile .LinkItemMobi{
         text-decoration: none;
-        color: var(--colorDeco6);
+        color: var(--text3);
         font-size: 22px;
     }
     .HeaderMobile .BtnSearchMobi{

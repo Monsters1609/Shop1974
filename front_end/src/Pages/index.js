@@ -1,0 +1,9 @@
+export {default as home} from './home';
+export {default as shop} from './shop';
+export {default as introduce} from './introduce';
+export {default as setting} from './setting';
+export {default as notification} from './notification';
+export {default as chartStatistical} from './chartStatistical';
+export {default as account} from './account';
+export {default as cart} from './cart';
+export {default as manage} from './manage';
