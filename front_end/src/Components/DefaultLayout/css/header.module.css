@@ -1,0 +1,39 @@
+.Header{
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    background-color: var(--colorDeco1);
+    z-index: 99;
+    display: flex;
+}
+.Header .HeaderLeft{
+    width: 33.3%;
+    height: 100%;
+}
+.Header .HeaderBetween{
+    width: 33.3%;
+    height: 100%;
+}
+.Header .HeaderRight{
+    width: 33.3%;
+    height: 100%;
+}
+.Header .HeaderLeft .MenuListLeft{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Header .HeaderRight .MenuListRight{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.MenuItemLeft, .MenuItemRight {
+    list-style: none;
+}
+.MenuItemLeft .link, .MenuItemRight .link{
+    text-decoration: none;
+    font-size: 22px;
+}
