@@ -10,8 +10,8 @@ const app = express()
 const Port = process.env.PORT || 1202
 
 // Sử dụng thư viện 
-app.use(morgan('combined'))
-app.use(cors())
+app.use(morgan('combined')) 
+app.use(cors()) 
 app.use(bodyParser.urlencoded({extended:false}))
 
 // Connect with MySql

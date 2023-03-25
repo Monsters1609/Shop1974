@@ -46,11 +46,11 @@ function Header () {
                             </Link>
                         </li>
                         <li className={clsx(style.MenuItemRight)}>
-                            <button type="botton" className={clsx(style.BtnAccount)}>
+                            <div className={clsx(style.BtnAccount)}>
                                 <Link to='/Account' className={clsx(style.linkAccount,style.link)}>
                                     <i className="bi bi-person-circle"></i>Login
                                 </Link>
-                            </button>
+                            </div>
                         </li>
                         <li className={clsx(style.MenuItemRight)}>
                             <Link to='/Setting' className={clsx(style.linkSetting,style.link)}>

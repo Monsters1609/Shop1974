@@ -1,0 +1,34 @@
+@media only screen and (min-width:1178px) {
+    .ManageLayout{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+    }
+    .ManageLayoutLeftSub{
+        width: 20%;
+        height: 100%;
+        position: fixed;
+        z-index: 99;
+    }
+    .ManageLayoutRightSub{
+        width: 80%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+    }
+    .ManageLayoutLeftMain{
+        width: 5%;
+        height: 100%;
+        position: fixed;
+        z-index: 99;
+    }
+    .ManageLayoutRightMain{
+        width: 95%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+    }
+}
+/* @media only screen and (max-width:1177px) {
+    
+} */

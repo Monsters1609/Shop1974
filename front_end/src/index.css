@@ -28,6 +28,9 @@ code {
   --text5:skyblue;
   --text6:#333;
   --text7:#38a8e8;
+  --text8:#ccffff;
+  --text9:#ffcccc;
+  --text10:#e91e63;
   --colorDeco1:#333;
   --colorDeco2:red;
   --colorDeco3:skyblue;
@@ -44,5 +47,7 @@ code {
   --colorDeco14:#38a8e8;
   --colorDeco15:orange;
   --colorDeco16:chocolate;
+  --colorDeco17:#e91e63;
+  --colorDeco18:linear-gradient( 35deg, #ccffff,#ffcccc);
 }
 

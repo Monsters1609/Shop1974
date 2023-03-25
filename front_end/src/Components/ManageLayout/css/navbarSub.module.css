@@ -1,0 +1,74 @@
+.NavbarSub{
+    width: 100%;
+    height: 100%;
+    background-color: var(--colorDeco1);
+}
+.TableNavSub{
+    width: 100%;
+    height: 100%;
+}
+.TheadNavSub{
+    width: 100%;
+    height: 10%;
+}
+.TheadNavSub .TrNavSub {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.TheadNavSub .TrNavSub .TdNavSub .CloseMenuList{
+    width: 40px;
+    height: 40px;
+    border: 1px var(--colorDeco7) solid;
+    border-radius: 30%;
+    text-align: center;
+}
+.TheadNavSub .TrNavSub .TdNavSub .CloseMenuList:hover{
+    width: 40px;
+    height: 40px;
+    border: 1px var(--colorDeco5) solid;
+    border-radius: 30%;
+    text-align: center;
+}
+.TheadNavSub .TrNavSub .TdNavSub .CloseMenuList .IconCloseMenu{
+    position: relative;
+    top: -2.5px;
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--text1);
+}
+.TbodyNavSub{
+    width: 100%;
+    height: 90%;
+}
+.TbodyNavSub .TrNavSub {
+    width: 100%;
+    height: 14%;
+}
+.TbodyNavSub .TrNavSub .TdNavSub .LinkItem{
+    position: relative;
+    left: 15%;
+    font-size: 22px;
+    text-decoration: none;
+    color: var(--text3);
+}
+.TbodyNavSub .TrNavSub .TdNavSub .LinkItem:hover{
+    position: relative;
+    left: 15%;
+    font-size: 22px;
+    text-decoration: none;
+    color: var(--text10);
+}
+.TbodyNavSub .TrNavSub .TdNavSub:hover .Decorate{
+    position: relative;
+    left: 10%;
+    animation-name: Decorate;
+    animation-duration:5s;
+    transition: 5s; 
+}
+@keyframes Decorate {
+    from{background-color: var(--colorDeco11);width:0px;height: 3px;border-radius: 10px;}
+    to{background-color: var(--colorDeco11);width:205px;height: 3px;border-radius: 10px;}
+}

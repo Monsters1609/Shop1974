@@ -1,0 +1,37 @@
+.HeaderManagerMain{
+    width: 80%;
+    height: 10%;
+    position: fixed;
+    z-index: 99;
+    left: 10%;
+    top: 2%;
+    background-color: var(--colorDeco1);
+    border-radius: 30px;
+    display: flex;
+}
+.HeaderManagerSub{
+    width: 60%;
+    height: 10%;
+    background-color: var(--colorDeco1);
+    border-radius: 30px;
+    position: fixed;
+    top: 2%;
+    left: 31%;
+    z-index: 99;
+    display: flex;
+}
+.HeaderLeft_Path, .HeaderRight{
+    width: 50%;
+    height: 100%;
+}
+.HeaderLeft_Path{
+    text-align: center;
+    position: relative;
+    top: 18%;
+}
+.HeaderLeft_Path .TitlePage{
+    color: var(--text3);
+}
+.IconHeart{
+    color: var(--text10);
+}

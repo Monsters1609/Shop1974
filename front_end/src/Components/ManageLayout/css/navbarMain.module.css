@@ -1,0 +1,68 @@
+.NavbarMain{
+    width: 100%;
+    height: 100%;
+    background-color: var(--colorDeco1);
+}
+.TableNavMain{
+    width: 100%;
+    height: 100%;
+}
+.TheadNavMain{
+    width: 100%;
+    height: 10%;
+}
+.TbodyNavMain{
+    width: 100%;
+    height: 90%;
+}
+.TheadNavMain .TrNavMain {
+    width: 100%;
+    height: 50%;
+}
+.TheadNavMain .TrNavMain .TdNavMain {
+    width: 100%;
+    height: 100%;
+}
+.TheadNavMain .TrNavMain .TdNavMain .CloseMenuList{
+    width: 40px;
+    height: 40px;
+    border: 1px var(--colorDeco7) solid;
+    border-radius: 30%;
+    text-align: center;
+    position: relative;
+    left: 18%;
+}
+.TheadNavMain .TrNavMain .TdNavMain .CloseMenuList:hover{
+    width: 40px;
+    height: 40px;
+    border: 1px var(--colorDeco5) solid;
+    border-radius: 30%;
+    text-align: center;
+    position: relative;
+    left: 18%;
+}
+.TheadNavMain .TrNavMain .TdNavMain .CloseMenuList .IconCloseMenu {
+    position: relative;
+    top: -2.5px;
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--text1);
+}
+.TbodyNavMain .TrNavMain{
+    width: 100%;
+    height: 14%;
+}
+.TbodyNavMain .TrNavMain .TdNavMain{
+    width: 100%;
+    text-align: center;
+}
+.TbodyNavMain .TrNavMain .TdNavMain .LinkItem{
+    font-size: 22px;
+    text-decoration: none;
+    color: var(--text3);
+}
+.TbodyNavMain .TrNavMain .TdNavMain .LinkItem:hover{
+    font-size: 22px;
+    text-decoration: none;
+    color: var(--text10);
+}
