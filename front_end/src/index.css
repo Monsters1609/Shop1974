@@ -49,5 +49,7 @@ code {
   --colorDeco16:chocolate;
   --colorDeco17:#e91e63;
   --colorDeco18:linear-gradient( 35deg, #ccffff,#ffcccc);
+  --colorDeco19:rgba(255,255,255,.5);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');

@@ -1,8 +1,15 @@
-export {default as error} from './error';
-export {default as login} from './login';
-export {default as register} from './register';
-export {default as slider} from './slider';
-export {default as tableListCustomer} from './tableListCustomer';
-export {default as tableListIngredient} from './tableListIngredient';
-export {default as tableListPersonnel} from './tableListPersonnel';
-export {default as tableListProduce} from './tableListProduce';
+export {default as Error} from './error';
+export {default as Login} from './login';
+export {default as Register} from './register';
+export {default as Slider} from './slider';
+export {default as TableListCustomer} from './tableListCustomer';
+export {default as TableListIngredient} from './tableListIngredient';
+export {default as TableListPersonnel} from './tableListPersonnel';
+export {default as TableListProduce} from './tableListProduce';
+export {default as AddIngredient} from './addIngredient';
+export {default as AddProduce} from './addProduce';
+export {default as UpdateIngredient} from './updateIngredient';
+export {default as UpdateProduce} from './updateProduce';
+export {default as Loading} from './loading';
+
+
