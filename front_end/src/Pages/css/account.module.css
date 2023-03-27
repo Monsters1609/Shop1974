@@ -1,3 +1,9 @@
 .Account{
-    
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.AccountLeft, .AccountRight{
+    width: 50%;
+    height: 100%;
 }

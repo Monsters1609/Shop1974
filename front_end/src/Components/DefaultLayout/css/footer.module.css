@@ -4,7 +4,8 @@
         height: 40%;
         background-color: var(--colorDeco1);
         position: absolute;
-        bottom: 0;
+        bottom: -50%;
+        margin: 0;
         z-index: 0;
     }
     .FooterMobile{
@@ -70,6 +71,7 @@
         border-radius: 20px;
         left: 5%;
         bottom: 10px;
+        margin: 0;
         z-index: 99;
     }
     .FooterWeb{

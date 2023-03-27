@@ -3,7 +3,12 @@ import clsx from 'clsx'
 function Account () {
     return (
         <div className={clsx(style.Account)}>
-            
+            <div className={clsx(style.AccountLeft)}>
+                
+            </div>
+            <div className={clsx(style.AccountRight)}>
+                
+            </div>
         </div>
     )
 }
