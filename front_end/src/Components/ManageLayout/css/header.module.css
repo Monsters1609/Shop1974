@@ -20,18 +20,42 @@
     z-index: 99;
     display: flex;
 }
-.HeaderLeft_Path, .HeaderRight{
-    width: 50%;
+.HeaderLeft_Path{
+    width: 70%;
     height: 100%;
 }
-.HeaderLeft_Path{
-    text-align: center;
-    position: relative;
-    top: 18%;
-}
 .HeaderLeft_Path .TitlePage{
+    position: relative;
+    left: 10%;
+    top: 25%;
     color: var(--text3);
+    margin: 0;
 }
 .IconHeart{
     color: var(--text10);
+}
+.HeaderRight {
+    width: 30%;
+    height: 100%;
+}
+.HeaderRight .HeaderList {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+}
+.HeaderRight .HeaderList .HeaderItem{
+    list-style: none;
+    text-align: center;
+}
+.HeaderRight .HeaderList .HeaderItem .HeaderLink{
+    color:var(--text3);
+    font-size: 22px;
+    text-decoration: none;
+}
+.HeaderRight .HeaderList .HeaderItem .HeaderLink:hover{
+    color:var(--text10);
+    font-size: 22px;
+    text-decoration: none;
 }

@@ -57,6 +57,11 @@
         font-size: 22px;
         color: var(--text3);
     }
+    .HeaderWeb .MenuItemLeft .link:hover, .HeaderWeb .MenuItemRight .link:hover{
+        text-decoration: none;
+        font-size: 22px;
+        color: var(--text10);
+    }
     .Header .HeaderWeb .HeaderRight .MenuListRight .MenuItemRight .BtnAccount{
         width: 100%;
         height: 25%;
