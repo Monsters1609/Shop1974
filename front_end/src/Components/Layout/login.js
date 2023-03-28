@@ -1,9 +1,7 @@
 import clsx from 'clsx';
-import { useState } from 'react';
 import {Link} from 'react-router-dom'
 import style from './css/login.module.css';
-function Login () {
-    const [showPass, setShowPass] = useState(true)
+function Login ({showPass, setShowPass}) {
     return(
         <div className={clsx(style.Login)}>
             <div className={clsx(style.TableLogin)}>
@@ -18,7 +16,7 @@ function Login () {
                             type="tel" 
                             name="" 
                             value="" 
-                            pattern="[0-9]{2}[0-9]{4}[0-9]{4}" 
+                            pattern="[0-9]{2}[0-9]{3}[0-9]{3}[0-9]{2}" 
                             required
                             onChange={()=>{}}
                         />
@@ -30,7 +28,7 @@ function Login () {
                         </span>
                         <input 
                             id='InputPassword'
-                            type={showPass?'text':'password'} 
+                            type={showPass?'password':'text'} 
                             name="" 
                             value="" 
                             required
