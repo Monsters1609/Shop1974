@@ -11,7 +11,7 @@ function Register ({showPass, setShowPass}) {
                             <i className="bi bi-phone-fill"></i>
                         </span>
                         <input 
-                            id="InputPhone"
+                            id="InputPhoneRegister"
                             type="tel" 
                             name="" 
                             value="" 
@@ -19,21 +19,21 @@ function Register ({showPass, setShowPass}) {
                             required
                             onChange={()=>{}}
                         />
-                        <label htmlFor="InputPhone">Phone</label>
+                        <label htmlFor="InputPhoneRegister">Phone</label>
                     </div>
                     <div className={clsx(style.InputBoxRegister)}>
                         <span className={clsx(style.IconRegister)}>
                             <i className="bi bi-shield-lock-fill"></i>
                         </span>
                         <input 
-                            id="InputPassword"
+                            id="InputPasswordRegister"
                             type={showPass?'password':'text'} 
                             name="" 
                             value=""
                             required
                             onChange={()=>{}}
                         />
-                        <label htmlFor="InputPassword">Password</label>
+                        <label htmlFor="InputPasswordRegister">Password</label>
                         <span className={clsx(style.IconEyeRegister)} onClick={()=>{setShowPass(!showPass)}}>
                             <i className={clsx(showPass?"bi bi-eye":"bi bi-eye-slash")}></i>
                         </span>
