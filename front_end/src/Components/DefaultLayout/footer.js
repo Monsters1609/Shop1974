@@ -22,10 +22,16 @@ function Footer () {
                         <div className={clsx(style.InforManager)}>
                             <p>Manager: Nguyễn Thị Hương</p>
                             <p>
-                                Phone Number: <Link to='tel:0947892522'>0947892522</Link>
+                                Phone Number <i className="bi bi-phone"></i> : 
+                                <Link to='tel:0947892522'>
+                                    0947892522
+                                </Link>
                             </p>
                             <p>
-                                Email: <Link to='mailto:huong0212@gmail.com'>huong0212@gmail.com</Link>
+                                Email <i className="bi bi-envelope"></i> : 
+                                <Link to='mailto:huong0212@gmail.com'>
+                                    huong0212@gmail.com
+                                </Link>
                             </p>
                         </div>
                     </div>

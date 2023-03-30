@@ -15,12 +15,12 @@ function Header () {
                         </li>
                         <li className={clsx(style.MenuItemLeft)}>
                             <Link to='/' className={clsx(style.LinkHome,style.link)}>
-                                <i className="bi bi-house"></i>Home
+                                <i className="bi bi-house"></i> Home
                             </Link>
                         </li>
                         <li className={clsx(style.MenuItemLeft)}>
                             <Link to='/Shop' className={clsx(style.linkShop,style.link)}>
-                                <i className="bi bi-shop"></i>Shop
+                                <i className="bi bi-shop"></i> Shop
                             </Link>
                         </li>
                     </ul>
@@ -48,9 +48,21 @@ function Header () {
                         <li className={clsx(style.MenuItemRight)}>
                             <div className={clsx(style.BtnAccount)}>
                                 <Link to='/Account' className={clsx(style.linkAccount,style.link)}>
-                                    <i className="bi bi-person-circle"></i>Login
+                                    <i className="bi bi-person-circle"></i> Login
                                 </Link>
                             </div>
+                            <ul className={clsx(style.MenuSubListRight1)}>
+                                <li className={clsx(style.MenuSubItemRight)}>
+                                    <Link to='/Manage' className={clsx(style.linkManage,style.linkSub)}>
+                                        <i className="bi bi-diagram-3"></i> Manage
+                                    </Link>
+                                </li>
+                                <li className={clsx(style.MenuSubItemRight)}>
+                                    <Link to='#' className={clsx(style.linkLogout,style.linkSub)}>
+                                        <i className="bi bi-door-open"></i>Logout
+                                    </Link>
+                                </li>
+                            </ul>
                         </li>
                         <li className={clsx(style.MenuItemRight)}>
                             <Link to='/Setting' className={clsx(style.linkSetting,style.link)}>
