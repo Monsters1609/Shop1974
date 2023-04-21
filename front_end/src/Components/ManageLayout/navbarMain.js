@@ -32,6 +32,13 @@ function NavbarMain ({show, setShow}) {
                     </tr>
                     <tr className={clsx(style.TrNavMain)}>
                         <td className={clsx(style.TdNavMain)}>
+                            <Link to='/Register' className={clsx(style.LinkItem)}>
+                                <i className="bi bi-person-plus-fill"></i>
+                            </Link>
+                        </td>
+                    </tr>
+                    <tr className={clsx(style.TrNavMain)}>
+                        <td className={clsx(style.TdNavMain)}>
                             <Link to='/Add' className={clsx(style.LinkItem)}>
                                 <i className="bi bi-bag-plus-fill"></i>
                             </Link>

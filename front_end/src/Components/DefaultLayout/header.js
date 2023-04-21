@@ -47,7 +47,7 @@ function Header () {
                         </li>
                         <li className={clsx(style.MenuItemRight)}>
                             <div className={clsx(style.BtnAccount)}>
-                                <Link to='/Account' className={clsx(style.linkAccount,style.link)}>
+                                <Link to='/Login' className={clsx(style.linkAccount,style.link)}>
                                     <i className="bi bi-person-circle"></i> Login
                                 </Link>
                             </div>
@@ -59,7 +59,7 @@ function Header () {
                                 </li>
                                 <li className={clsx(style.MenuSubItemRight)}>
                                     <Link to='#' className={clsx(style.linkLogout,style.linkSub)}>
-                                        <i className="bi bi-door-open"></i>Logout
+                                        <i className="bi bi-door-open"></i> Logout
                                     </Link>
                                 </li>
                             </ul>

@@ -1,10 +1,7 @@
-import axios from 'axios';
+import Axios from "axios";
 
-axios({
-    method: 'get',
-    url: 'http://localhost:1202/api/getUser',
-    responseType: 'stream'
-  })
-.then(function (res) {
-    console.log(res.data);
-});
+const Request = Axios.create({
+    baseURL: 'http://localhost:1202/api',
+})
+
+export default Request;

@@ -2,7 +2,9 @@
     .Footer{
         width: 100%;
         height: 40%;
-        background-color: var(--colorDeco1);
+        background: url(../../../Imgs/50487762_295875624609110_4748365960983871488_n.png);
+        background-repeat:repeat;
+        background-position: 150px;
         position: absolute;
         bottom: -50%;
         margin: 0;
@@ -42,10 +44,11 @@
     }
     .FooterWeb .Contact{
         text-align: center;
-        color: var(--text1);
+        color: var(--text5);
+        font-weight: bold;
     }
     .FooterWeb .Contact a{
-        color: var(--text1);
+        color: var(--text5);
     }
     .FooterWeb .SocialNetwork .LinkSN{
         display: flex;
@@ -54,7 +57,7 @@
     }
     .FooterWeb .LinkSN .LinkItemSN{
         font-size: 35px;
-        color: var(--text1);
+        color: var(--text7);
     }
     .FooterWeb .FooterWebBot{
         width: 100%;
@@ -66,7 +69,10 @@
     .Footer{
         width: 90%;
         height: 10%;
-        background-color: var(--colorDeco1);
+        background: url(../../../Imgs/pngtree-seamless-pattern-cosmic-objects-set-hand-drawn-vector-doodles-rockets-planets-picture-image_1397361.jpg);
+        background-repeat:no-repeat;
+        background-size: 100%;
+        /* background-position: 150px; */
         position: fixed;
         border-radius: 20px;
         left: 5%;

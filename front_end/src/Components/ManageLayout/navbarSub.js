@@ -31,6 +31,14 @@ function NavbarSub ({show, setShow}) {
                     </tr>
                     <tr className={clsx(style.TrNavSub)}>
                         <td className={clsx(style.TdNavSub)} colSpan='2'>
+                            <Link className={clsx(style.LinkItem)} to='/Register'>
+                                <i className="bi bi-person-plus-fill"></i> Add User
+                            </Link>
+                            <div className={clsx(style.Decorate)}></div>
+                        </td>
+                    </tr>
+                    <tr className={clsx(style.TrNavSub)}>
+                        <td className={clsx(style.TdNavSub)} colSpan='2'>
                             <Link className={clsx(style.LinkItem)} to='/Add'>
                                 <i className="bi bi-bag-plus-fill"></i> Add 
                             </Link>

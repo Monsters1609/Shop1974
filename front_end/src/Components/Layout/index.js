@@ -1,6 +1,4 @@
 export {default as Error} from './error';
-export {default as Login} from './login';
-export {default as Register} from './register';
 export {default as Slider} from './slider';
 export {default as TableListCustomer} from './tableListCustomer';
 export {default as TableListIngredient} from './tableListIngredient';

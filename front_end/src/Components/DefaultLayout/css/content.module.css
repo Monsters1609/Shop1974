@@ -25,7 +25,8 @@
 @media only screen and (max-width:1177px){
     .Content{
         width: 100%;
-        height: 78%;
+        height: 90%; 
+        /*height: 78%; */
         position: absolute;
         top: 10%;
         margin: 0;

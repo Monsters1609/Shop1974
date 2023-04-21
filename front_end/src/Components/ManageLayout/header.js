@@ -2,8 +2,10 @@ import clsx from "clsx";
 import style from './css/header.module.css';
 import { Link, useLocation } from "react-router-dom";
 function HeaderManager ({show}) {
+    // kiểm tra path 
     const location = useLocation()
     console.log(location.pathname)
+    
     return(
         <div className={clsx(show?style.HeaderManagerMain:style.HeaderManagerSub)}>
             <div className={clsx(style.HeaderLeft_Path)}>
@@ -22,7 +24,7 @@ function HeaderManager ({show}) {
                         </Link>
                     </li>
                     <li className={clsx(style.HeaderItem)}>
-                        <Link className={clsx(style.HeaderLink)} to='/Account'>
+                        <Link className={clsx(style.HeaderLink)} to='/Login'>
                             <i className="bi bi-person-circle"></i>
                         </Link>
                     </li>

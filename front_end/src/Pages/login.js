@@ -1,24 +1,42 @@
 import clsx from 'clsx';
 import {Link} from 'react-router-dom'
+import { addNewDataAccount, setPasswordLogin, setPhoneLogin } from '../Data/Store';
+import { useContextDataAll, useContextHandleChange } from '../Hooks/hooks';
 import style from './css/login.module.css';
-function Login ({showPass, setShowPass}) {
+import { BtnLogin } from '../Handles';
+import { useEffect, useState } from 'react';
+import { request } from '../Data/API';
+function Login () {
+    const [showPass, setShowPass] = useState(true)
+    const [HandleChange, dispatchHandleChange] = useContextHandleChange()
+    const [dataAccount, setDataAccount] = useState([])
+    const [dataAll, dispatch] = useContextDataAll()
+    useEffect(()=>{
+        request.get('/Account/getAccount')
+        .then((res)=>{
+            setDataAccount(res.data)
+        })
+        
+    },[]);
+    console.log(dataAll);
     return(
         <div className={clsx(style.Login)}>
             <div className={clsx(style.TableLogin)}>
                 <h2 className={clsx(style.TitleTableLogin)}>Login</h2>
-                <form className={clsx(style.FormLogin)} method='POST'>
+                <form className={clsx(style.FormLogin)}  >
                     <div className={clsx(style.InputBoxLogin)}>
                         <span className={clsx(style.IconLogin)}>
                             <i className="bi bi-phone-fill"></i>
                         </span>
                         <input 
                             id='InputPhone'
-                            type="tel" 
+                            type="text" 
                             name="" 
-                            value="" 
-                            pattern="[0-9]{2}[0-9]{3}[0-9]{3}[0-9]{2}" 
+                            value={HandleChange.phoneLogin} 
                             required
-                            onChange={()=>{}}
+                            onChange={(value)=>{
+                                dispatchHandleChange(setPhoneLogin(value.target.value))
+                            }}
                         />
                         <label htmlFor="InputPhone">Phone</label>
                     </div>
@@ -30,9 +48,11 @@ function Login ({showPass, setShowPass}) {
                             id='InputPassword'
                             type={showPass?'password':'text'} 
                             name="" 
-                            value="" 
+                            value={HandleChange.passwordLogin} 
                             required
-                            onChange={()=>{}}
+                            onChange={(value)=>{
+                                dispatchHandleChange(setPasswordLogin(value.target.value))
+                            }}
                         />
                         <label htmlFor="InputPassword">Password</label>
                         <span className={clsx(style.IconEyeLogin)} onClick={()=>{setShowPass(!showPass)}}>
@@ -46,7 +66,7 @@ function Login ({showPass, setShowPass}) {
                         </label>
                         <Link to='#'>Forgot password ?</Link>
                     </div>
-                    <button className={clsx(style.BtnSubmitLogin)} type="submit">Login</button>
+                    <button className={clsx(style.BtnSubmitLogin)} type="button" onClick={()=>{BtnLogin(HandleChange, dataAccount, dispatch, dataAll, addNewDataAccount)}}>Login</button>
                 </form>
             </div>
         </div>
